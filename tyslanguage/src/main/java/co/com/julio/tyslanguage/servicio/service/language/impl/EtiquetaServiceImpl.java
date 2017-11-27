@@ -100,11 +100,54 @@ public class EtiquetaServiceImpl implements EtiquetaService {
 	 * @return
 	 */
 	private boolean isValidacionReglas(String mensaje) {
-		// Validaciones
-		mensaje = mensaje.trim();
-		if(!mensaje.substring(0, 1).equals("#")) {
+		if (mensaje == null || mensaje.length() == 0) {
 			return false;
 		}
+		
+		String[] mensajes = mensaje.trim().split("\n");
+		if (mensajes == null || mensajes.length == 0) {
+			return false;
+		}
+		
+		for (int i = 0; i < mensajes.length; i++) {
+			/**
+			 * # hola mundo
+			 */
+			String[] mnjs = mensajes[i].split(" ");
+			
+			if (mnjs == null || mnjs.length == 0) {
+				return false;
+			}
+			
+			/**
+			 * #
+			 */
+			String[] valoresPos0 = mnjs[0].split("");
+			
+			/**
+			 * En la posicion 0 solo deben ir de 1 (#) hasta 6 (#)
+			 * Ejemplo:
+			 * #
+			 * ##
+			 * ###
+			 * ####
+			 * #####
+			 * ######
+			 */
+			if (valoresPos0.length > 6) {
+				return false;
+			}
+			
+			for (int j = 0; j < valoresPos0.length; j++) {
+				/**
+				 * Si en la posicion 0 va un caracter distinto a #, entonces retorna falso
+				 */
+				if (!valoresPos0[j].equals("#")) {
+					return false;
+				}
+			}
+		}
+		
 		return true;
 	}
 

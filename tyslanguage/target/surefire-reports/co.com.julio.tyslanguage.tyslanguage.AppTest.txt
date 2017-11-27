@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: co.com.julio.tyslanguage.tyslanguage.AppTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 sec - in co.com.julio.tyslanguage.tyslanguage.AppTest
