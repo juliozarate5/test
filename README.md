@@ -21,5 +21,4 @@ Give examples
 # Para el servidor:
 * Ingresamos al directorio "test" (cd test/desplegables/servidor) estando alli, ejecutamos el comando java -jar tyslanguage-0.0.1-SNAPSHOT.jar
 # Para el cliente:
-*  
-En desplegables/dist.zip se encuentra el desplegable del cliente. se coloca en el directorio del servidor web. se debe tener en cuenta la ruta de los js, en este caso estan nombrados como dist/NOMBRE_DEL_JS, porque el directorio tiene este nombre
+*  En desplegables/dist.zip se encuentra el desplegable del cliente. se coloca en el directorio del servidor web. se debe tener en cuenta la ruta de los js, en este caso estan nombrados como dist/NOMBRE_DEL_JS, porque el directorio tiene este nombre
