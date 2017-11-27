@@ -1,0 +1,7 @@
+co\com\julio\tyslanguage\servicio\service\language\iface\EtiquetaService.class
+co\com\julio\tyslanguage\servicio\service\language\impl\EtiquetaServiceImpl.class
+co\com\julio\tyslanguage\servicio\endpoint\language\EtiquetaRestEndPoint.class
+co\com\julio\tyslanguage\servicio\util\Utils.class
+co\com\julio\tyslanguage\servicio\service\language\dto\EtiquetaDto.class
+co\com\julio\tyslanguage\servicio\MainApp.class
+co\com\julio\tyslanguage\servicio\service\language\dto\SimboloDto.class

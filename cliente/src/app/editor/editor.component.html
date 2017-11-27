@@ -1,0 +1,25 @@
+<div class="container-fluid">
+    <div class="col-sm-9">        
+        <h4 class="alert alert-success">T&S Language</h4>
+        <hr>
+        <h4 class="alert alert-warning">EDITOR</h4>
+        <hr>
+        <form role="form" (ngSubmit)="enviarCodigo(formCode.value)" #formCode="ngForm">
+            <div class="form-group">
+                <textarea class="form-control" rows="4" name="codigo" ngModel required></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-danger" [disabled]="!formCode.valid">Run</button> 
+                <button type="button"  (click)="reset(formCode)" class="btn btn-success" [disabled]="!formCode.valid">Clear</button>
+            </div>
+        </form>
+
+        <hr>
+        <h4 class="alert alert-info">OUTPUT</h4>
+        <div class="row">
+            <div class="form-group">
+                    <textarea class="form-control" name="output" rows="15" readonly>{{output}}</textarea>
+            </div>
+        </div>
+    </div>
+</div>
